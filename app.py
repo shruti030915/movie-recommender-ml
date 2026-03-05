@@ -5,8 +5,8 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 st.title("🎬 Movie Recommendation System")
 
-ratings = pd.read_csv("ml-latest-small/ratings.csv")
-movies = pd.read_csv("ml-latest-small/movies.csv")
+ratings = pd.read_csv("ratings.csv")
+movies = pd.read_csv("movies.csv")
 
 data = pd.merge(ratings, movies, on="movieId")
 
